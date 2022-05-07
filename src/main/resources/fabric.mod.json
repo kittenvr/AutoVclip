@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "autovclipper-addon",
+  "version": "${version}",
+  "name": "AutoVclip Addon",
+  "description": "Automatically clip vertically, up or down.",
+  "authors": [
+    "0xEnjoy, Mathrandom7910"
+  ],
+  "contact": {
+    "repo": "https://github.com/0xEnjoy/AutoVclipperAddon"
+  },
+  "icon": "assets/autovclipper/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "meteor": [
+      "me.zeroxEnjoy.autovclipper.AutoClipAddon"
+    ]
+  },
+  "mixins": [
+    "autovcllipper.mixins.json"
+  ],
+  "custom": {
+    "meteor-client:color": "225,25,25"
+  },
+  "depends": {
+    "java": ">=17",
+    "minecraft": ">=${mc_version}",
+    "meteor-client": "*"
+  }
+}
