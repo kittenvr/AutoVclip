@@ -1,1 +1,1 @@
-# AutoVclip Addon for Meteor Client.
+# AutoVclip Addon for the Meteor Client.
