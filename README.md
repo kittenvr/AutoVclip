@@ -1,3 +1,4 @@
+![GitHub all releases](https://img.shields.io/github/downloads/0xEnjoy/AutoVclip/total)
 # AutoVclip Addon for the Meteor Client.
 
 <h2>How to use:</h2>
