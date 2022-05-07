@@ -4,8 +4,10 @@
 
 * Use the command ".avclip up/down" or ".avc up/down" to automatically vclip up or down.
 
+<i>(You can also bind the ".avclip up" and ".avclip down" commands, by creating a macro within the Meteor Client).</i>
 
-    <p><h6>Based on Mathrandom7910's <a href="https://github.com/Mathrandom7910/AutoClipAddon">AutoClipAddon</a>.</h6>
+
+   <h6>Based on Mathrandom7910's <a href="https://github.com/Mathrandom7910/AutoClipAddon">AutoClipAddon</a>.</h6>
 
 <h2>What makes AutoVclip different from AutoClipAddon?</h2>
 
