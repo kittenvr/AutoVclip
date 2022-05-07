@@ -1,8 +1,8 @@
 package me.zeroxEnjoy.autovclipper;
 
 
-import me.zeroxEnjoy.autovclipper.commands.AVClipCommand;
-import me.zeroxEnjoy.autovclipper.commands.AVClipCommandFix;
+import me.zeroxEnjoy.autovclipper.commands.AVClipCommandDown;
+import me.zeroxEnjoy.autovclipper.commands.AVClipCommandUp;
 import meteordevelopment.meteorclient.addons.MeteorAddon;
 import meteordevelopment.meteorclient.systems.commands.Commands;
 import org.slf4j.Logger;
@@ -18,7 +18,7 @@ public class AutoClipAddon extends MeteorAddon {
 		// Required when using @EventHandler
 		//MeteorClient.EVENT_BUS.registerLambdaFactory("meteordevelopment.addons.template", (lookupInMethod, klass) -> (MethodHandles.Lookup) lookupInMethod.invoke(null, klass, MethodHandles.lookup()));
 		// Commands
-		Commands.get().add(new AVClipCommand());
-		Commands.get().add(new AVClipCommandFix());
+		Commands.get().add(new AVClipCommandDown());
+		Commands.get().add(new AVClipCommandUp());
 	}
 }
