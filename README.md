@@ -14,6 +14,6 @@
 
 - **AutoVclip** changes the way the player is being teleported, to a more efficient and non-clunky one. Instead of teleporting to the position of the closest block, it now teleports the player to the height of the block, thus reducing clunkiness.
 
-- **AutoVclip** actually vclips the player up, if it detects a block within the 10 blocks upwards limit. You do not need to, directly, stick your head one block below the block you want to clip through.
+- **AutoVclip** actually vclips the player up. It checks if the next 10 blocks upwards are AIR and if one of them isn't, it teleports the player above it. You do not need to stick your head directly under a block to clip through.
 
 - **AutoVclip** works with boats and other rideable entities too!
