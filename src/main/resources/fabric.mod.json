@@ -5,7 +5,8 @@
   "name": "AutoVclip Addon",
   "description": "Automatically clip vertically, up or down.",
   "authors": [
-    "0xEnjoy, Mathrandom7910"
+    "0xEnjoy, Mathrandom7910",
+    "cqb13"
   ],
   "contact": {
     "repo": "https://github.com/0xEnjoy/AutoVclip"
@@ -26,6 +27,6 @@
   "depends": {
     "java": ">=17",
     "minecraft": ">=${mc_version}",
-    "meteor-client": "*"
+    "meteor-client": ">=0.5.0"
   }
 }

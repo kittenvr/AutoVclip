@@ -1,22 +1,29 @@
 package me.zeroxEnjoy.autovclipper;
 
-
 import me.zeroxEnjoy.autovclipper.commands.AVClipCommand;
+import com.mojang.logging.LogUtils;
 import meteordevelopment.meteorclient.addons.MeteorAddon;
 import meteordevelopment.meteorclient.systems.commands.Commands;
 import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class AutoClipAddon extends MeteorAddon {
-	public static final Logger LOG = LoggerFactory.getLogger(AutoClipAddon.class);
+	public static final Logger LOGGER = LogUtils.getLogger();
 
 	@Override
 	public void onInitialize() {
-		LOG.info("Initializing Auto Clip addon");
+		Log("Beginning initialization.");
 
-		// Required when using @EventHandler
-		//MeteorClient.EVENT_BUS.registerLambdaFactory("meteordevelopment.addons.template", (lookupInMethod, klass) -> (MethodHandles.Lookup) lookupInMethod.invoke(null, klass, MethodHandles.lookup()));
-		// Commands
 		Commands.get().add(new AVClipCommand());
+
+		Log("Initialized successfully!");
+	}
+
+	@Override
+	public String getPackage() {
+		return "me.zeroxEnjoy.autovclipper";
+	}
+
+	public static void Log(String text) {
+		LOGGER.info(text);
 	}
 }
